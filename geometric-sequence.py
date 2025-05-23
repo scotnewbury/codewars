@@ -22,10 +22,7 @@ def geometric_sequence_sum(a, r, n):
     term = a
     for i in range(n):
         total = total + term
-        print(f"current total is: {total}\n")
         term = term * r
-        
-        
     return total
 
 print(f"The total is: {geometric_sequence_sum(2, 3, 4)}")
