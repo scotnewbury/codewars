@@ -18,9 +18,14 @@
 # a = 2, r = 3, n = 5 should return 242.
 
 def geometric_sequence_sum(a, r, n):
-    total = a
+    total = 0
+    term = a
     for i in range(n):
-        total += total * n
+        total = total + term
+        print(f"current total is: {total}\n")
+        term = term * r
+        
+        
     return total
 
-print(geometric_sequence_sum(2, 3, 5))
+print(f"The total is: {geometric_sequence_sum(2, 3, 4)}")
