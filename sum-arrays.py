@@ -18,6 +18,7 @@
 # You can assume that you do get an array and if the array is empty, return 0.
 
 def sum_array(a):
+    # The for loop could be replaced by the sum() function
     for i in range(len(a)):
         print(a[i])
     return(0)
