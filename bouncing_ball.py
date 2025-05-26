@@ -22,3 +22,15 @@ Initial height is an integer in range [2,1000]
 
 Bouncing Proportion is a decimal in range [0, 1)
 '''
+
+
+def bouncing_ball(initial, proportion):
+    height = initial
+    bounces = 0
+    while height > 1:
+        height = height * proportion
+        bounces += 1
+    return bounces
+
+
+print(bouncing_ball(30, 0.3))
