@@ -6,10 +6,14 @@
 # first term 2 and ratio 3 is 2, 6, 18, 54. Notice that, given any term,
 # it is 3 times larger than the last term for this case.
 
-# A geometric series is just the first n terms of the sequence summed together. For instance, the sum of the first four terms of the example provided above is 
-# 2 + 6 + 18 + 54 = 80
+# A geometric series is just the first n terms of the sequence summed together.
+# For instance, the sum of the first four terms of the example provided above
+# is 2 + 6 + 18 + 54 = 80
+
+
 # Kata Task
-# Complete the function which will help you compute a geometric progression / series.
+# Complete the function which will help you compute
+# a geometric progression / series.
 # The parameters provided are as follows:
 # a is the first term
 # r is the common ratio
@@ -24,5 +28,6 @@ def geometric_sequence_sum(a, r, n):
         total = total + term
         term = term * r
     return total
+
 
 print(f"The total is: {geometric_sequence_sum(2, 3, 4)}")
